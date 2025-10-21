@@ -154,13 +154,19 @@
   }
 
   /* Responsive design */
+  @media (max-width: 1000px) {
+    .image-gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
   @media (max-width: 800px) {
     .image-gallery {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 480px) {
     .image-gallery {
       grid-template-columns: 1fr;
     }
@@ -244,7 +250,7 @@
   <div id="contact">
     <h2>Contact</h2>
     <div class="contact-form">
-      <form action="https://formspree.io/f/xkgqpdlj" method="POST">
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
 
