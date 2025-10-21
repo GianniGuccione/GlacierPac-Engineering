@@ -38,10 +38,11 @@
     gap: 60px;
   }
 
-  /* STATIC GRAY LINKS */
+  /* Make Services/Contact match iOS phone link blue */
   nav a {
-    color: #555;                /* permanent gray color */
-    text-decoration: underline; /* underlined, classic look */
+    color: #0000EE;        /* fallback classic link blue */
+    color: -webkit-link;   /* iOS/Chrome/Safari native link blue */
+    text-decoration: underline;
     font-family: "Times New Roman", Times, serif;
     font-size: 20px;
   }
@@ -137,7 +138,7 @@
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #000000;
+    border: 1px solid #000000; /* fixed stray 'a' */
     font-family: "Times New Roman", Times, serif;
     font-size: 16px;
   }
