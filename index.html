@@ -10,59 +10,54 @@
     background-color: #ffffff;
     font-family: "Times New Roman", Times, serif;
     color: #000000;
-    margin: 40px auto;
-    width: 1000px;
+    margin: 0;
     line-height: 1.5em;
     scroll-behavior: smooth;
   }
 
-  /* Header with logo + title side by side */
+  /* Black banner header */
   .header {
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 15px;
-  }
-
-  .header h1 {
-    font-size: 42px;
-    color: #000000;
-    letter-spacing: 2px;
-    margin: 0;
+    padding: 15px 60px;
   }
 
   .header img {
-    width: 160px; /* Adjust size as needed */
+    width: 150px;
     height: auto;
   }
 
+  nav {
+    display: flex;
+    gap: 25px;
+  }
+
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Intro paragraph below banner */
   .intro {
     text-align: center;
     font-size: 18px;
     max-width: 800px;
-    margin: 0 auto 30px auto;
+    margin: 40px auto 30px auto;
+    color: #000000;
   }
 
   hr {
     margin: 20px 0;
     border: none;
     border-top: 1px solid #000000;
-  }
-
-  nav {
-    text-align: center;
-    margin-bottom: 25px;
-  }
-
-  nav a {
-    color: #000000;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-  }
-
-  nav a:hover {
-    text-decoration: underline;
   }
 
   h2 {
@@ -88,6 +83,7 @@
     gap: 25px;
     justify-content: center;
     margin: 40px auto;
+    width: 1000px;
   }
 
   figure {
@@ -111,6 +107,8 @@
 
   .content {
     text-align: left;
+    width: 1000px;
+    margin: 0 auto;
   }
 
   #contact {
@@ -160,30 +158,32 @@
   .contact-form button:hover {
     background-color: #333;
   }
+
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 14px;
+    color: #555;
+  }
 </style>
 </head>
 <body>
 
-  <!-- Header Section -->
+  <!-- Black Banner Header -->
   <div class="header">
-    <h1>GlacierPac Engineering</h1>
     <img src="images/image14.png" alt="GlacierPac Engineering Logo">
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
 
+  <!-- Intro paragraph below banner -->
   <p class="intro">
-  Specializing in machine design, stress and flow simulation, and precision machining services for prototypes and small production runs.
-  GlacierPac also supports in the design and manufacture of complete machines that meet the unique needs of customers in
-  fluid power, agriculture, packaging, and other industrial sectors.
+    Specializing in machine design, stress and flow simulation, and precision machining services for prototypes and small production runs.
+    GlacierPac also supports in the design and manufacture of complete machines that meet the unique needs of customers in
+    fluid power, agriculture, packaging, and other industrial sectors.
   </p>
-
-  <hr>
-
-  <nav>
-    <a href="#services">Services</a> |
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <hr>
 
   <div id="services" class="content">
     <div class="image-gallery">
@@ -252,10 +252,9 @@
     </div>
   </div>
 
-  <footer style="text-align:center; margin-top:60px; font-size:14px; color:#555;">
+  <footer>
     &copy; <script>document.write(new Date().getFullYear());</script> GlacierPac Engineering. All rights reserved.
   </footer>
-  
+
 </body>
 </html>
-
