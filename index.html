@@ -24,6 +24,13 @@
     margin-bottom: 10px;
   }
 
+  .logo {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 180px; /* Adjust size as needed */
+    height: auto;
+  }
+
   .intro {
     text-align: center;
     font-size: 18px;
@@ -70,7 +77,6 @@
     text-align: justify;
   }
 
-  /* Image grid */
   .image-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -102,7 +108,6 @@
     text-align: left;
   }
 
-  /* Contact Section */
   #contact {
     margin-top: 80px;
     padding-top: 20px;
@@ -154,6 +159,9 @@
 </head>
 <body>
 
+  <!-- Company Logo -->
+  <img src="images/image14.PNG" alt="GlacierPac Engineering Logo" class="logo">
+
   <h1>GlacierPac Engineering</h1>
   <p class="intro">
   Specializing in machine design, stress and flow simulation, and precision machining services for prototypes and small production runs.
@@ -171,8 +179,6 @@
   <hr>
 
   <div id="services" class="content">
-
-    <!-- Image Grid -->
     <div class="image-gallery">
       <figure><img src="images/image1.PNG" alt="Image 1"><figcaption>High Temperature Actuator for Any Fluid Tech</figcaption></figure>
       <figure><img src="images/image2.PNG" alt="Image 2"><figcaption>1 5/16-16 threaded cap</figcaption></figure>
@@ -188,7 +194,6 @@
       <figure><img src="images/image12.PNG" alt="Image 12"><figcaption>High finish poppet valve</figcaption></figure>
     </div>
 
-    <!-- Services Text -->
     <h2>Machine Design</h2>
     <ul>
       <li>Machine design, hydraulic and pneumatic systems, mechanisms, weldments, springs, machined parts, and sheet metal parts.</li>
@@ -218,7 +223,6 @@
     </ul>
   </div>
 
-  <!-- CONTACT SECTION -->
   <div id="contact">
     <h2>Contact</h2>
     <div class="contact-form">
@@ -240,11 +244,10 @@
       </p>
     </div>
   </div>
-<!-- COPYRIGHT FOOTER -->
-<footer style="text-align:center; margin-top:60px; font-size:14px; color:#555;">
-  &copy; <script>document.write(new Date().getFullYear());</script> GlacierPac Engineering. All rights reserved.
-</footer>
+
+  <footer style="text-align:center; margin-top:60px; font-size:14px; color:#555;">
+    &copy; <script>document.write(new Date().getFullYear());</script> GlacierPac Engineering. All rights reserved.
+  </footer>
   
 </body>
 </html>
-
