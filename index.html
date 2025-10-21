@@ -16,18 +16,23 @@
     scroll-behavior: smooth;
   }
 
-  h1 {
-    text-align: center;
+  /* Header with logo + title side by side */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .header h1 {
     font-size: 42px;
     color: #000000;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin: 0;
   }
 
-  .logo {
-    display: block;
-    margin: 0 auto 10px auto;
-    width: 180px; /* Adjust size as needed */
+  .header img {
+    width: 160px; /* Adjust size as needed */
     height: auto;
   }
 
@@ -159,10 +164,12 @@
 </head>
 <body>
 
-  <!-- Company Logo -->
-  <img src="images/image14.PNG" alt="GlacierPac Engineering Logo" class="logo">
+  <!-- Header Section -->
+  <div class="header">
+    <h1>GlacierPac Engineering</h1>
+    <img src="images/image14.PNG" alt="GlacierPac Engineering Logo">
+  </div>
 
-  <h1>GlacierPac Engineering</h1>
   <p class="intro">
   Specializing in machine design, stress and flow simulation, and precision machining services for prototypes and small production runs.
   GlacierPac also supports in the design and manufacture of complete machines that meet the unique needs of customers in
